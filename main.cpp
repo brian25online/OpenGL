@@ -34,8 +34,8 @@ int main(int argc, char **argv)
   Aria::setKeyHandler(&keyHandler);
   robot.attachKeyHandler(&keyHandler);
 
-  ArLog::log(ArLog::Normal,"This program will make the robot wander around. It uses some avoidance\n"
-  "actions if obstacles are detected, otherwise it just has a\n"
+  ArLog::log(ArLog::Normal,"This program will make the robot wander around and develop a map. It uses some avoidance\n"
+  "actions if obstacles are detected, otherwise it has a\n"
   "constant forward velocity.\n\nPress CTRL-C or Escape to exit.");
   
   ArSonarDevice sonar;
